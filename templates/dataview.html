@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <! -- Styles --!>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/dataview.css') }}">
+    <title>Control panel</title>
+</head>
+
+<body id="top">
+    <div class="page_name">
+      <h2>{{ identifier }} data</h2>
+    </div>
+    <div class="editpars">
+    <div class="stream_list">
+      {% if empty %}
+        <h3>No data</h3>
+      {% else %}
+        <h3>{{ data['target'] }}:</h3>
+        <ul>
+          {% for key, value in data.items(): %}
+          <span style="font-size:25px;">{{ key }}</span>
+          <li><a href="#">{{ value }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      <button class="control_buttons" type="button" onclick="window.location.href = '{{ button['link'] }}';">{{ button['text'] }}</button>
+      <button class="control_buttons" type="button" onclick="window.location.href = '{{ deletelink }}';">Delete Entry</button>
+       <button class="control_buttons" type="button" onclick="window.location.href = '{{ url_for('index') }}';">Go to home</button>
+    </div>
+</body>
+</html>

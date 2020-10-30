@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/dashboard.css') }}">
+    <title>Playlist Manager dashboard (Gatekeeper)</title>
+</head>
+<body id="top">
+     <div class="title_container">
+    <div class="title">
+         <a href="/index">
+           <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" height="170" width="300">
+         </a>
+    </div>
+  </div>
+    <div class="user">
+        <span class="username">Welcome, user</span>
+    </div>
+    <div class="dashoptions">
+     <ul id="buttons">
+            <li><a href="{{ url_for('create_playlist') }}">New Playlist</a></li>
+       <li><a href="./listplaylist">Current playlists</a></li>
+        </ul>
+    </div>
+</body>
+</html>

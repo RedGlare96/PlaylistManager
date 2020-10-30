@@ -1,0 +1,12 @@
+.stream_list{
+  float: left;
+}
+.streampars{
+  margin-left: 70%;
+  margin-right: 10%;
+  overflow: hidden;
+}
+.control_buttons{
+  text-align: center;
+  padding-top: 10px
+}

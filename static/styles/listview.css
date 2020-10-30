@@ -1,0 +1,94 @@
+#top{
+   padding-top: 10px;
+   background-color: #7c95bc;
+   background-size: cover;
+   font-family: Trebuchet MS , monospace;
+   color: black;
+}
+.title_container{
+   background-color: #c3ccdb;
+}
+.title_container .title{
+   display: inline-block;
+   background-color: #eff3f9;
+   font-size: 20px;
+   border-radius: 6px
+}
+.user{
+    padding-top: 20px;
+   font-size: 20;
+}
+.user .username{
+   display: inline-block;
+   text-align: right;
+}
+.streamlist{
+   padding-top: 50px;
+   text-align: center;
+   margin-left: 20%;
+   margin-right: 5%;
+}
+.streamlist .opens{
+   font-size: 20px
+}
+.dashoptions{
+  position: absolute;
+}
+#buttons li {
+    padding-top: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    background-color: #eff3f9;
+}
+#buttons li a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+#buttons li:last-child {
+    border: solid 1px #000;
+}
+#buttons li a:hover {
+   font-size: 30px;
+   color: white;
+   background:#050505;
+}
+ul {
+   list-style-type: none;
+   margin: 20;
+   padding: 0;
+   background-color: #c3ccdb;
+   border-radius: 5px;
+   overflow-y: scroll;
+}
+
+li {
+   font: 200 20px/1.5  Trebuchet MS, monospace ;
+   border-bottom: 1px solid #8f8f91;
+    border: solid 1px #000;
+}
+
+li:last-child {
+   border: none;
+}
+
+li a {
+   text-decoration: none;
+   color: black;
+   display: block;
+   width: 200px;
+
+   -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+   -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+   -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+   -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+   transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+   font-size: 30px;
+   color: white;
+   background:#050505;
+}

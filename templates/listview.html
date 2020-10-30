@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/listview.css') }}">
+    <title>Gatekeeper list view</title>
+</head>
+<body id="top">
+<h1>{{ identifier }}</h1>
+{% if listlen == 0 %}
+<span>No playlists here</span>
+{% else %}
+  <div class="streamlist">
+        <ul id="buttons">
+            {% for item in itemlist: %}
+            <li><a href="./{{ directlink }}/{{ item[0] }}">{{ item[1] }}</a></li>
+            {% endfor %}
+        </ul>
+      {% endif %}
+   {% if endbutton %}
+       <button class="control_buttons" type="button" onclick="window.location.href = '{{ button['link'] }}';">{{ button['text'] }}</button>
+   {% endif %}
+      <button class="control_buttons" type="button" onclick="window.location.href = '{{ url_for('index') }}';">Go to home</button>
+   </div>
+
+</body>
+</html>
